@@ -43,7 +43,7 @@ def Test():
       'x-lng': "312205224",
       'x-ab-test': "901,911,951,1021,1091,1101",
       'x-content': "mobile",
-      'x-locale': "en-eg",
+      'x-locale': "ar-eg",
       'x-platform': "web",
       'x-cms': "v2",
       'x-ecom-zonecode': "EG-CAI-S10",
@@ -60,13 +60,13 @@ def Test():
       'priority': "u=1, i",
     }
     response1 = requests.post(url, params=params, data=json.dumps(payload), headers=headers).text
-    #print(response1)
-    if "Hurray! You got a discount!" in response1 or "Code valid on select items only" in response1:
+    print(response1)
+    if "Hurray! You got a discount!" in response1 or "Code valid on select items only" in response1 or "مبروك" in response1 or "لكود صالح على منتجات معينة" in response1:
         print('Hurray! You got a discount!')
         botA.send_message(chat_id=ch_id, text=z)
     elif 'Coupon is only valid' in response1:
         print('Coupon is not allow your country')
-    elif 'Oops! Coupon code invalid' in response1:
+    elif 'Oops! Coupon code invalid' in response1 or "معذرة! رمز الكوبون غير" in response1:
         print('Oops! Coupon Error')
 while True:
     try:
