@@ -15,7 +15,7 @@ def generate_code(prefix, length):
     return code
 
 # مثال للاستخدام
-prefix = "VO27100-"
+prefix = "VO2750-"
 T="OP100"
 def Test():
     z = generate_code(prefix, 8)
