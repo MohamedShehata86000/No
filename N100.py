@@ -56,7 +56,7 @@ def Test():
       'sec-fetch-mode': "cors",
       'sec-fetch-dest': "empty",
       'referer': "https://www.noon.com/egypt-ar/cart/",
-      'accept-language': "en-US,en;q=0.9",
+      'accept-language': "ar-EG,ar;q=0.9,en-US;q=0.8,en;q=0.7",
       'priority': "u=1, i",
     }
     response1 = requests.post(url, params=params, data=json.dumps(payload), headers=headers).text
