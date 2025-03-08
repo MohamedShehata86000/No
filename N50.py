@@ -16,7 +16,7 @@ def generate_code(prefix, length):
 
 # مثال للاستخدام
 prefix = "VFSM50-"
-T="OP100"
+#T="OP100"
 def Test():
     z = generate_code(prefix, 8)
     z=T
