@@ -103,7 +103,7 @@ def Test():
 
     response = s.post(
         'https://www.noon.com/_svc/cart-v1/cart/item/fcb86993a7e25ded/1?showCart',
-      #  cookies=cookies,
+        cookies=cookies,
         headers=headers,
         json=json_data,
     )
@@ -176,7 +176,7 @@ def Test():
     print(url2)
     response1 = s.post(
         url2,
-        #cookies=cookies1,
+        cookies=cookies1,
         headers=headers1,
         json=json_data1,
     ).text
