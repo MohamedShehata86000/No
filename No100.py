@@ -11,10 +11,9 @@ s = requests.Session()
 
 import uuid
 
-# توليد قيمة عشوائية على نمط UUID
-random_uuid = uuid.uuid4()
-random_uuid_str = str(uuid.uuid4())
-print(random_uuid_str)
+
+
+
 
 import random
 import string
@@ -29,6 +28,8 @@ def generate_code(prefix, length):
 prefix = "VO27100-"
 T="OP100"
 def Test():
+    random_uuid = uuid.uuid4()
+    random_uuid_str = str(uuid.uuid4())
     z = generate_code(prefix, 8)
     #z=T
     cookies = {
@@ -179,7 +180,7 @@ def Test():
         headers=headers1,
         json=json_data1,
     ).text
-    print(response1)
+   # print(response1)
     if "Hurray! You got a discount!" in response1:
         print('Hurray! You got a discount!')
         botA.send_message(chat_id=ch_id, text=z)
