@@ -22,7 +22,7 @@ def Test():
     random_uuid = uuid.uuid4()
     random_uuid_str = str(uuid.uuid4())
     z = generate_code(prefix, 8)
-    z=T
+   # z=T
     cookies = {
         'nloc': 'en-eg',
         'visitor_id': random_uuid_str,
