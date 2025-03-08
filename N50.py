@@ -19,7 +19,7 @@ prefix = "VFSM50-"
 T="OP100"
 def Test():
     z = generate_code(prefix, 8)
-   # z=T
+    z=T
     ua = UserAgent().random
     url = "https://www.noon.com/_svc/cart-v1/coupon"
     
