@@ -46,7 +46,7 @@ def t():
     }
     
     response = requests.post(url, data=payload, headers=headers,)#proxies=proxies
-    time.sleep(60)
+    #time.sleep(60)
     if "has banned you temporarily" in response.text:
         print("Ban")
     elif "rate_limit_exceeded" in response.text:
@@ -72,9 +72,10 @@ def t():
                 print(response.text)     
 import time
 while True:
+    time.sleep(60) 
     try:
         t()
-        time.sleep(60) 
+        
     except:
         pass
       
