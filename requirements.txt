@@ -2,6 +2,3 @@ telebot
 requests
 fake_useragent
 uuid
-random
-string
-time
