@@ -1,14 +1,10 @@
-import requests
+
 import uuid
 import time
 import requests
 import json
-import requests
-import json
-import random
 import string
 import random
-import requests
 import telebot
 ####bot spam ###
 tok = "7662510170:AAEtrVLxiBS8nAuQws9bes4OPOHI0dduDYM"
@@ -50,6 +46,7 @@ def t():
     }
     
     response = requests.post(url, data=payload, headers=headers,)#proxies=proxies
+    time.sleep(60)
     if "has banned you temporarily" in response.text:
         print("Ban")
     elif "rate_limit_exceeded" in response.text:
@@ -61,7 +58,7 @@ def t():
             try:
                 if "غير مسجل "in response.json()["data"]["message"]:
                     print("Faild")
-                    botA.send_message(chat_id=ch_id, text="Faild")
+                    botA.send_message(chat_id=ch_id, text="Faild" + code )
                  
                 else:
                     
@@ -72,7 +69,7 @@ def t():
             except:
                              
                 botA.send_message(chat_id=ch_id, text=code)
-                print(response.text)
+                print(response.text)     
 import time
 while True:
     try:
