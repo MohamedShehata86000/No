@@ -31,7 +31,7 @@ proxies = {
 def t():
     code = generate_code(fixed_part)
     print(code)
-    #code="em1500t2yt8a"
+    code="em1500t2yt8a"
     url = "https://www.breadfast.com/ar/wp-json/breadfast/v3/main/get-coupon-data"
     
     payload = {
