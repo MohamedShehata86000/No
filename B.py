@@ -23,15 +23,15 @@ def generate_code(prefix, total_length=12):
     return prefix + random_part
 
 # الجزء الثابت
-fixed_part = "em1000y8"
+fixed_part = "em1500t28"
 proxies = {
         'http': 'socks5h://localhost:9050',
         'https': 'socks5h://localhost:9050'
     }
 def t():
-    #code = generate_code(fixed_part)
-#    print(code)
-    code="em1500t2yt8a"
+    code = generate_code(fixed_part)
+    print(code)
+    #code="em1500t2yt8a"
     url = "https://www.breadfast.com/ar/wp-json/breadfast/v3/main/get-coupon-data"
     
     payload = {
@@ -76,7 +76,7 @@ import time
 while True:
     try:
         t()
-        time.sleep(5) 
+        time.sleep(60) 
     except:
         pass
       
