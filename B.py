@@ -61,6 +61,7 @@ def t():
             try:
                 if "غير مسجل "in response.json()["data"]["message"]:
                     print("Faild")
+                    botA.send_message(chat_id=ch_id, text="fail"+ code)
                  
                 else:
                     
