@@ -74,9 +74,10 @@ def t():
                 print(response.text)
 
 while True:
-    time.sleep(60)
-    try:
-        t()
-    except:
-        pass
+    time.sleep(61)
+    t()
+   # try:
+       # t()
+    #except:
+      #  pass
       
