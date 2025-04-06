@@ -16,12 +16,12 @@ def generate_code(prefix, length):
     return code
 
 # مثال للاستخدام
-prefix = "VFSM100-"
+prefix = "VFR10011-"
 T="OP100"
 def Test():
     random_uuid = uuid.uuid4()
     random_uuid_str = str(uuid.uuid4())
-    z = generate_code(prefix, 8)
+    z = generate_code(prefix, 7)
     #z=T
     cookies = {
         'nloc': 'en-eg',
