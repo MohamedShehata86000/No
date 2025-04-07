@@ -1,6 +1,7 @@
 import requests
 import random
 import telebot
+import time
 tok = "8128789997:AAHIE70sQCwEZYPt7p90uLLg5RUHrIYnyxU"
 ch_id = "7037898496"
 botA = telebot.TeleBot(token=tok)
@@ -45,4 +46,5 @@ def pen():
         botA.send_message(chat_id=ch_id, text=response.json()["message"])
         print(response.json())
 while True:
+    time.sleep(5)
     pen()  
