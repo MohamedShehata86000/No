@@ -42,6 +42,8 @@ def pen():
     response = requests.post(url, data=payload, headers=headers)
     if response.json()["message"] =='كوبون غير صحيح'   :
         print("Bad")
+    elif response.json()["message"] =="Too Many Attempts."  :
+        time.sleep(2)     
     else:
         botA.send_message(chat_id=ch_id, text=response.json()["message"])
         print(response.json())
