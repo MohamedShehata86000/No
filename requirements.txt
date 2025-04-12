@@ -2,3 +2,4 @@ telebot
 requests
 fake_useragent
 uuid
+python-telegram-bot
